@@ -1,0 +1,75 @@
+:root {
+    --containerWidth: 288px;
+}
+
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox for the body */
+body {
+    background-color: hsl(212, 45%, 89%);
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    
+    display: flex;              /* Enable flex on the body */
+    flex-direction: column;     /* Stack children (header, main, footer) vertically */
+    justify-content: center;    /* Center the content vertically */
+    align-items: center;        /* Center the content horizontally */
+    min-height: 100vh;          /* Ensure body takes the full height of the screen */
+}
+
+/* Ensure main takes up full height if it has content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%; /* Ensures the main element stretches to fill space */
+}
+
+footer {
+    background-color: lightgray;
+    font-size: 10px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+div.page-container {
+    display: flex;              /* Use flexbox for the page container */
+    flex-direction: column;     /* Stack child elements inside .page-container */
+    align-items: center;        /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the start */
+    width: var(--containerWidth); /* Fixed width for the container */
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+div.container-text {
+    width: calc(var(--containerWidth) - 10%);
+    /* background-color: red;  Optional: for visualization */
+}
+
+img {
+    width: var(--containerWidth); /* Set the image width to the container width */
+    border-radius: 10px;
+}
+
+h2 {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+p {
+    color: hsl(216, 15%, 48%);
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0px;
+}
