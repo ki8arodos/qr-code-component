@@ -2,7 +2,6 @@
     --containerWidth: 288px;
 }
 
-/* Ensure html and body take full height */
 html, body {
     height: 100%;
     margin: 0;
@@ -22,18 +21,17 @@ body {
     min-height: 100vh;          /* Ensure body takes the full height of the screen */
 }
 
-/* Ensure main takes up full height if it has content */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    width: 100%; /* Ensures the main element stretches to fill space */
+    width: 100%;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: white;
     font-size: 10px;
     padding: 10px 0;
     width: 100%;
